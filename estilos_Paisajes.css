@@ -1,5 +1,4 @@
 body{
-  text-align: center;
   width: auto;
   background-color: black;
 }
@@ -12,7 +11,7 @@ body{
   border-radius: 10px 10px 0 0;
   font-size: 16px;
   display: inline ;
-  float: left;
+
 }
 
 	/* Nav Principal*/
@@ -48,24 +47,22 @@ body{
   	}
   #Columnas{
     background-color: #82c3a6;
+
   }
 
   #pie{
     background-color:#C6d5c5;
   }
 
-  @media screen(max-width:960px){
+
   #Columnas{
-    width: 90%
-  }
+    display: inline-block;
   }
 
-
-
-  @media screen(max-width:480px){
-  #Columnas{
-    width: 100%
-  }
+  .efecto1 img{
+    width: 50%;
+	-webkit-filter:blur(10px);
+	filter:blur(10px);
   }
 
 #pie div {
