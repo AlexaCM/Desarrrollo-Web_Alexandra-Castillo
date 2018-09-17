@@ -1,6 +1,11 @@
 body{
-  width: auto;
+
   background-color: black;
+  display: inline-block;
+  animation-name: slidein;
+  margin-top: 1%;
+  margin-bottom: -5px;
+  order-radius: 10px 10px 10px 10px;
 }
 
 #Encabezado {
@@ -8,28 +13,27 @@ body{
   text-align: left;
   color: white;
   text-shadow: 2px #02010a;
-  border-radius: 10px 10px 0 0;
-  font-size: 16px;
-  display: inline ;
+  height: 50px;
+  width: 100%;
+
 
 }
 
+
 	/* Nav Principal*/
 	#Encabezado nav ul{
-		width: 1350px;
-		background-color:#5b7989;
-    color: white;
-    text-shadow: 2px 2px #02010a;
+		color: white;
+    text-shadow: 2px #02010a;
     border-radius: 10px 10px 0 0;
-    display: ;
     text-align: right;
-    display: inline-block;
 	}
 
   #Encabezado nav ul {
     list-style: none;
     margin: 0 auto;
     text-align: right;
+
+    display: inline-block;
   }
   	#Encabezado nav li {float: right; text-shadow: 2px #02010a;}
 
@@ -44,29 +48,105 @@ body{
   		background: #3399CC;
   		text-shadow: none !important;
   		border-radius: 15px 10px 6px;
-  	}
-  #Columnas{
-    background-color: #82c3a6;
+    }
 
-  }
-
-  #pie{
+/*Pie de Pagina*/
+ footer{
     background-color:#C6d5c5;
-  }
 
 
-  #Columnas{
-    display: inline-block;
-  }
-
-  .efecto1 img{
-    width: 50%;
-	-webkit-filter:blur(10px);
-	filter:blur(10px);
   }
 
 #pie div {
 	margin: 0;
   padding: 0;
-	display: inline-block;
+  display: inline-block;
+
+}
+
+/*Contenido*/
+#contenido {
+  background-color: #82c3a6;
+	display: flex;
+	flex-direction: column;
+}
+
+img{
+	border: 2px solid white;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+.contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+
+#efecto1 img{
+  -webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#efecto2 img{
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#efecto3 img{
+  -webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+#efecto4 img{
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#efecto6 img{
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+/*adaptar a desktop*/
+@media (min-width: 900px) {
+  #Encabezado{
+    font-size: 1em;
+    font-family: dancing script;
+  }
+
+  #contenido{
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+  #pie{
+
+    width:100%;
+    height: 20%;
+  }
+  img{
+    width: 300px;
+  }
+}
+/*adaptar a movil*/
+@media (max-width: 900px) {
+  #contenido{
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  #encabezado{
+
+    font-size: 1.3em;
+    font-family: helvetica;
+  }
+  #pie{
+    margin-left: auto;
+    margin-right: auto;
+    : 50%
+  }
+  img{
+  width: 300px;
+}
 }
