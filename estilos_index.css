@@ -1,9 +1,8 @@
 body{
   text-align: center;
-  width: auto;
   background-color: black;
+  font-family: Dancing Script;
 }
-
 #Encabezado {
   background-color:#5b7989;
   text-align: left;
@@ -11,65 +10,32 @@ body{
   text-shadow: 2px #02010a;
   border-radius: 10px 10px 0 0;
   font-size: 16px;
-  display: inline ;
-  float: left;
+}
+@media (min-width: 900px) {
+#Encabezado nav ul{
+  text-align: right;
+  display: inline;
+  color: white;
+  list-style: none;
+
+}
+#Encabezado nav li {
+  float: right;
+  text-shadow: 2px #02010a;
+  padding: 1em;
+
+}
+#Encabezado nav a:link, #Encabezado nav a:visited {
+  color: #fff;
+  text-decoration: none;em
+
+#Encabezado nav .active a:link, #Encabezado nav .active a:visited {
+  background: #3399CC;
+  text-shadow: none !important;
 }
 
-	/* Nav Principal*/
-	#Encabezado nav ul{
-		width: 1350px;
-		background-color:#5b7989;
-    color: white;
-    text-shadow: 2px 2px #02010a;
-    border-radius: 10px 10px 0 0;
-    display: ;
-    text-align: right;
-    display: inline-block;
-	}
+#imagen1 img{
+  text-align: center;
+}
 
-  #Encabezado nav ul {
-    list-style: none;
-    margin: 0 auto;
-    text-align: right;
-  }
-  	#Encabezado nav li {float: right; text-shadow: 2px #02010a;}
-
-    #Encabezado nav a:link, #Encabezado nav a:visited {
-  		color: #fff;
-  		padding: 3px 2em;
-  		text-decoration: none;
-
-  	}
-
-  	#Encabezado nav .active a:link, #Encabezado nav .active a:visited {
-  		background: #3399CC;
-  		text-shadow: none !important;
-  		border-radius: 15px 10px 6px;
-  	}
-  #Columnas{
-    background-color: #82c3a6;
-  }
-
-  #pie{
-    background-color:#C6d5c5;
-  }
-
-  @media screen(max-width:960px){
-  #Columnas{
-    width: 90%
-  }
-  }
-
-
-
-  @media screen(max-width:480px){
-  #Columnas{
-    width: 100%
-  }
-  }
-
-#pie div {
-	margin: 0;
-  padding: 0;
-	display: inline-block;
 }
